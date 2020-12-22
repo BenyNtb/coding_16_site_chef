@@ -16093,6 +16093,12 @@ body header .carousel-indicators li:hover {
   height: 120px;
 }
 
+@media screen and (max-width: 760px) {
+  h1 {
+    color: red;
+  }
+}
+
 .titre-chef {
   background-image: url("../img/team_background.jpg");
   height: 700px;
@@ -16128,6 +16134,7 @@ body header .carousel-indicators li:hover {
   font-family: Courgette-Regular;
   text-align: center;
   padding-top: 60px;
+  color: black;
 }
 
 .our h1 span {
@@ -16202,4 +16209,49 @@ form input {
   margin-bottom: 50px;
   border-radius: 30px;
   margin: 30px;
+}
+
+.bg {
+  background-image: url("../img/testimonials_background.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 80px;
+}
+
+h1 {
+  font-family: Courgette-Regular;
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+h1 span {
+  color: #c91d34;
+}
+
+.client img {
+  border-radius: 50%;
+  border: solid 0.5em lightgrey;
+}
+
+.client .manager {
+  padding-top: 90px;
+  justify-content: space-between;
+}
+
+.client .manager .text-woman {
+  padding: 0 30px 0 30px;
+}
+
+.client .manager h3 {
+  color: white;
+}
+
+.client .manager h4 {
+  color: #c91d34;
+}
+
+.client .manager p {
+  color: white;
 }
