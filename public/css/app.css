@@ -16092,3 +16092,34 @@ body header .carousel-indicators li:hover {
   display: flex;
   height: 120px;
 }
+
+.titre-chef {
+  background-image: url("../img/team_background.jpg");
+  height: 700px;
+  background-size: cover;
+}
+
+.titre-chef h1 {
+  font-family: Courgette-Regular;
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+.titre-chef h1 span {
+  color: #c91d34;
+}
+
+.titre-chef img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titre-chef .chef {
+  padding-top: 150px;
+}
+
+.titre-chef .chef img {
+  border-bottom: solid 1px;
+}
