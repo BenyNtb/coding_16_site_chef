@@ -16200,7 +16200,7 @@ form input {
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 16px;
-  padding: 12px 24px;
+  margin: 0px 0px 0px 50px;
   border-radius: 8px;
   text-align: center;
 }
@@ -16254,4 +16254,53 @@ h1 span {
 
 .client .manager p {
   color: white;
+}
+
+h1 {
+  font-family: Courgette-Regular;
+  text-align: center;
+  padding-top: 60px;
+  color: black;
+}
+
+h1 span {
+  color: #c91d34;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square {
+  height: 450px;
+  width: 450px;
+  background-color: #c91d34;
+  border-radius: 3%;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.square i {
+  font-size: 40px;
+}
+
+.square hr {
+  background-color: #ffffff;
+}
+
+.bas {
+  background-image: url("../img/footer_background.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 80px;
+  color: white;
+}
+
+.bas img {
+  height: 50px;
 }
