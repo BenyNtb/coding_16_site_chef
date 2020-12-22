@@ -16103,7 +16103,7 @@ body header .carousel-indicators li:hover {
   font-family: Courgette-Regular;
   text-align: center;
   padding-top: 60px;
-  color: white;
+  color: black;
 }
 
 .titre-chef h1 span {
@@ -16122,4 +16122,84 @@ body header .carousel-indicators li:hover {
 
 .titre-chef .chef img {
   border-bottom: solid 1px;
+}
+
+.our h1 {
+  font-family: Courgette-Regular;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.our h1 span {
+  color: #c91d34;
+}
+
+.our img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin: 0 auto;
+  background-image: url("../img/book_table_bg.jpg");
+  border-radius: 16%;
+  height: 950px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+form p {
+  color: white;
+  font-family: Ubuntu-Light;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+
+form p span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+form input {
+  border-radius: 5%;
+}
+
+/*OUR BLOG*/
+.blog {
+  padding-top: 50px;
+  margin: 20px;
+}
+
+.blog img {
+  border-radius: 5%;
+  border: solid 0.3em lightgrey;
+  height: auto;
+  width: auto;
+}
+
+.blog span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.blog button {
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.blog .but {
+  margin-bottom: 50px;
+  border-radius: 30px;
+  margin: 30px;
 }
