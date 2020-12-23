@@ -14,15 +14,26 @@
         color: #c91d34
     .client
         color: white
+        @include media-breakpoint-down(sm) 
+            font-size: 10px 
+            
         .text-woman
             color: white
+            @include media-breakpoint-down(sm) 
+                font-size: 12px
+                text-align: center
         .manager
             color: white
             span
                 color:  #c91d34
-            img
-                border-radius: 50%
-                border: solid 0.5em lightgrey
-                height: 180px
-                @include media-breakpoint-down(sm) 
-                    height: 90px
+        @include media-breakpoint-down(sm) 
+            text-align: center
+            p
+                color: white
+        img
+            border-radius: 50%
+            border: solid 0.5em lightgrey
+            height: 180px
+            @include media-breakpoint-down(sm) 
+                height: 90px
+

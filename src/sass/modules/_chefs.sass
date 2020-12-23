@@ -12,9 +12,6 @@
             color: #c91d34
     img
         display: block
-        
-        @include media-breakpoint-down(sm) 
-            height: 150px
     p
         font-size:        
         @include media-breakpoint-down(sm) 
@@ -22,5 +19,18 @@
     .chef
         padding-top: 150px
         margin-right: 0px
+        @include media-breakpoint-down(sm) 
+            padding-top: 0
+            margin: 0px 0px 0px 0px
         img
             border-bottom: solid 1px    
+            @include media-breakpoint-down(sm) 
+                height: 115px
+                padding-top: 5%
+                display: block
+                // width: 130px
+            @include media-breakpoint-only(md)
+                    height: 70px
+                    // width: 50px
+                    // padding-top: 10%
+                    display: flex

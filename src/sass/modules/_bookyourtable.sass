@@ -10,6 +10,7 @@
         display: block
         margin-left: auto
         margin-right: auto
+        
     //titre//       
 form
     margin: 0 auto
@@ -21,7 +22,9 @@ form
     // background-size: contain
     background-position: center
     height: 600px
-    
+    @include media-breakpoint-down(sm) 
+        height: 750px
+        width: 350px
     p
         color: white
         font-family: Ubuntu-Light
@@ -48,10 +51,17 @@ form
         width: auto
         @include media-breakpoint-down(sm)
             height: 150px
-        
+        @include media-breakpoint-down(md)
+            height: 150px
+            // right: 70%
     span
         font-weight: bold
         font-size: 22px
+        @include media-breakpoint-down(md)
+            font-size: 14px
+    h6,p
+        @include media-breakpoint-down(md)
+            font-size: 14px
     button
         font-size: 16px
         top: 50%
@@ -63,9 +73,17 @@ form
         margin: 0px 0px 0px 50px
         border-radius: 8px
         text-align: center
-        @include media-breakpoint-down(sm) 
+        @include media-breakpoint-only(sm) 
             margin: auto
+        @include media-breakpoint-only(md)
+            height: 50px
+            font-size: 10px
+            margin: auto
+            
     .but
         margin-bottom: 50px
         border-radius: 30px
         margin: 30px
+        @include media-breakpoint-only(md)
+            margin: auto
+            
