@@ -10,14 +10,13 @@
         display: block
         margin-left: auto
         margin-right: auto
-
-    
+    //titre//       
 form
     margin: 0 auto
     background-image: url('../img/book_table_bg.jpg')
-    border-radius: 16%
-    // width: 15%
-    height: 950px
+    background-size: cover
+    border-radius: 20px
+    width: 70%
     background-repeat: no-repeat
     // background-size: contain
     background-position: center
@@ -33,8 +32,8 @@ form
             font-size: 30px
     
 
-    input
-        border-radius: 5%
+        input
+            border-radius: 5%
 /*OUR BLOG*/
 .blog
     padding-top: 50px
@@ -44,6 +43,8 @@ form
         border: solid 0.3em lightgrey
         height: auto
         width: auto
+        @include media-breakpoint-down(sm)
+            height: 150px
         
     span
         font-weight: bold
@@ -59,6 +60,8 @@ form
         margin: 0px 0px 0px 50px
         border-radius: 8px
         text-align: center
+        @include media-breakpoint-down(sm) 
+            margin: auto
     .but
         margin-bottom: 50px
         border-radius: 30px

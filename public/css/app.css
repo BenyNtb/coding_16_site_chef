@@ -15946,6 +15946,16 @@ body {
   background-image: url("../img/main_bg.jpg");
 }
 
+body header {
+  overflow: hidden;
+}
+
+body header .navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
 body header .navbar-collapse {
   flex-grow: 0;
   border-top: 1px solid white;
@@ -15971,8 +15981,7 @@ body header .navbar-collapse ul li a:hover {
 }
 
 body header .text h5 {
-  font-size: 35px;
-  text-transform: uppercase;
+  font-size: 25px;
   letter-spacing: 2px;
   margin-top: 25px;
   font-family: Courgette-Regular;
@@ -15984,8 +15993,19 @@ body header .text h5 {
   color: white;
 }
 
+@media (max-width: 767.98px) {
+  body header .text h5 {
+    left: -170%;
+    font-size: 20px;
+    color: black;
+    bottom: 30%;
+  }
+}
+
 body header .text h5 .bold {
   font-size: 46px;
+  left: -180%;
+  bottom: 60%;
 }
 
 body header .text h5 .red {
@@ -15999,6 +16019,13 @@ body header .boutton {
   position: absolute;
   padding-top: 51vh;
   padding-left: 46rem;
+}
+
+@media (max-width: 767.98px) {
+  body header .boutton {
+    left: -170%;
+    bottom: 10%;
+  }
 }
 
 body header .boutton .btn {
@@ -16035,6 +16062,12 @@ body header .carousel-indicators li:hover {
   height: 12px;
 }
 
+.dent {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+}
+
 .part-one h1 {
   font-family: Courgette-Regular;
   text-align: center;
@@ -16067,6 +16100,16 @@ body header .carousel-indicators li:hover {
   padding-left: 50px;
 }
 
+@media (max-width: 767.98px) {
+  .bkf .icon-full .icon {
+    padding-left: 140px;
+  }
+}
+
+.bkf .side {
+  border-bottom: solid 1px light grey;
+}
+
 .bkf h5 {
   font-family: Courgette-Regular;
   font-size: 30px;
@@ -16074,13 +16117,14 @@ body header .carousel-indicators li:hover {
   border-right-length: 60px;
 }
 
-.bkf h6 {
-  padding-left: 20px;
-  padding-top: 50px;
+@media (max-width: 767.98px) {
+  .bkf h5 {
+    padding-left: 120px;
+    font-size: 20px;
+  }
 }
 
 .bkf p {
-  padding-left: 20px;
   font-size: 15px;
 }
 
@@ -16091,12 +16135,17 @@ body header .carousel-indicators li:hover {
   font-size: 80px;
   display: flex;
   height: 120px;
+  position: relative;
 }
 
-@media screen and (max-width: 760px) {
-  h1 {
-    color: red;
-  }
+.bkf span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: lightgrey;
+  padding: 10px;
+  color: #c91d34;
+  opacity: 0.8;
 }
 
 .titre-chef {
@@ -16109,7 +16158,7 @@ body header .carousel-indicators li:hover {
   font-family: Courgette-Regular;
   text-align: center;
   padding-top: 60px;
-  color: black;
+  color: white;
 }
 
 .titre-chef h1 span {
@@ -16120,6 +16169,18 @@ body header .carousel-indicators li:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 767.98px) {
+  .titre-chef img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .titre-chef p {
+    font-size: 10px;
+  }
 }
 
 .titre-chef .chef {
@@ -16150,8 +16211,9 @@ body header .carousel-indicators li:hover {
 form {
   margin: 0 auto;
   background-image: url("../img/book_table_bg.jpg");
-  border-radius: 16%;
-  height: 950px;
+  background-size: cover;
+  border-radius: 20px;
+  width: 70%;
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
@@ -16170,7 +16232,7 @@ form p span {
   font-size: 30px;
 }
 
-form input {
+form p input {
   border-radius: 5%;
 }
 
@@ -16185,6 +16247,12 @@ form input {
   border: solid 0.3em lightgrey;
   height: auto;
   width: auto;
+}
+
+@media (max-width: 767.98px) {
+  .blog img {
+    height: 150px;
+  }
 }
 
 .blog span {
@@ -16205,6 +16273,12 @@ form input {
   text-align: center;
 }
 
+@media (max-width: 767.98px) {
+  .blog button {
+    margin: auto;
+  }
+}
+
 .blog .but {
   margin-bottom: 50px;
   border-radius: 30px;
@@ -16215,45 +16289,45 @@ form input {
   background-image: url("../img/testimonials_background.jpg");
   background-repeat: no repeat;
   background-size: cover;
-  text-align: center;
-  padding: 80px;
 }
 
-h1 {
+.bg h1 {
   font-family: Courgette-Regular;
   text-align: center;
   padding-top: 60px;
   color: white;
 }
 
-h1 span {
+.bg span {
   color: #c91d34;
 }
 
-.client img {
+.bg .client {
+  color: white;
+}
+
+.bg .client .text-woman {
+  color: white;
+}
+
+.bg .client .manager {
+  color: white;
+}
+
+.bg .client .manager span {
+  color: #c91d34;
+}
+
+.bg .client .manager img {
   border-radius: 50%;
   border: solid 0.5em lightgrey;
+  height: 180px;
 }
 
-.client .manager {
-  padding-top: 90px;
-  justify-content: space-between;
-}
-
-.client .manager .text-woman {
-  padding: 0 30px 0 30px;
-}
-
-.client .manager h3 {
-  color: white;
-}
-
-.client .manager h4 {
-  color: #c91d34;
-}
-
-.client .manager p {
-  color: white;
+@media (max-width: 767.98px) {
+  .bg .client .manager img {
+    height: 90px;
+  }
 }
 
 h1 {
@@ -16292,15 +16366,53 @@ img {
   background-color: #ffffff;
 }
 
-.bas {
+footer {
+  overflow: hidden;
+  position: relative;
+}
+
+footer .fond {
+  width: 100%;
+  height: 100px;
+}
+
+footer .dent-bas {
+  top: 0%;
+  display: flex;
+  position: absolute;
+}
+
+footer .bas {
   background-image: url("../img/footer_background.jpg");
   background-repeat: no repeat;
   background-size: cover;
-  text-align: center;
   padding: 80px;
   color: white;
 }
 
-.bas img {
+footer .bas ul {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  padding: 12px;
+}
+
+footer .bas ul li {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+footer .bas img {
   height: 50px;
+}
+
+footer .bas .insta {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+footer .bas .insta img {
+  height: 75px;
+  margin-bottom: 10px;
 }

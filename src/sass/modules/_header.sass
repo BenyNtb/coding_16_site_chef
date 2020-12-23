@@ -1,6 +1,11 @@
 body
     background-image: url("../img/main_bg.jpg")
     header
+        overflow: hidden
+        .navbar
+            position: absolute
+            z-index: 1
+            width: 100%
         .navbar-collapse
             flex-grow: 0
             border-top: 1px solid white
@@ -20,8 +25,7 @@ body
                         cursor: pointer
         .text
             h5 
-                font-size: 35px
-                text-transform: uppercase
+                font-size: 25px
                 letter-spacing: 2px
                 margin-top: 25px
                 font-family: Courgette-Regular
@@ -31,9 +35,19 @@ body
                 padding-left: 42rem
                 text-align: center
                 color: white
+                @include media-breakpoint-down(sm)
+                    left: -170%
+                    font-size: 20px
+                    color: black
+                    bottom: 30%
 
                 .bold
                     font-size: 46px
+                    @include media-breakpoint-down(sm)
+                    // font-size: 26px
+                    left: -180%
+                    bottom: 60%
+                    // color: black
                 .red
                     color: #c91d34
                     font-size: 46px
@@ -43,7 +57,9 @@ body
             position: absolute
             padding-top: 51vh
             padding-left: 46rem
-
+            @include media-breakpoint-down(sm)
+                left: -170%
+                bottom: 10%
             .btn 
                 border: 10px solid none
                 border-radius: 30px
@@ -56,6 +72,7 @@ body
             -moz-background-size: cover
             -o-background-size: cover
             background-size: cover
+            
             .d-block
                 filter: brightness(10%)
                 -webkit-filter: brightness(10%)
@@ -70,6 +87,9 @@ body
                 border-radius: 50%
                 width: 12px
                 height: 12px    
-
-
+.dent
+    position: absolute
+    bottom: 0%
+    display: flex
     
+
