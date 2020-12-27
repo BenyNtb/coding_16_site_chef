@@ -14,9 +14,12 @@
         color: #c91d34
     .client
         color: white
+        flex-wrap: nowrap
+        justify-content: center
         @include media-breakpoint-down(sm) 
             font-size: 10px 
-            
+        @include media-breakpoint-down(md) 
+            flex-wrap: wrap    
         .text-woman
             color: white
             @include media-breakpoint-down(sm) 
@@ -36,4 +39,6 @@
             height: 180px
             @include media-breakpoint-down(sm) 
                 height: 90px
+            @include media-breakpoint-down(md)
+                    
 

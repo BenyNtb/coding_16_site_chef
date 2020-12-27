@@ -16021,6 +16021,21 @@ body .navbar .liste {
   border-bottom: 2px solid white;
 }
 
+@media (max-width: 767.98px) {
+  body .navbar .liste {
+    background-color: #0a0a0a;
+    border-top: 2px solid black;
+    border-bottom: 2px solid;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  body .navbar .liste {
+    font-size: 12px;
+  }
+}
+
 body .navbar .liste a {
   text-decoration: none;
   font-size: 15px;
@@ -16032,6 +16047,12 @@ body .navbar .liste:hover {
 
 @media (max-width: 1199.98px) {
   body .navbar .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body .navbar .listenav {
     display: none;
   }
 }
@@ -16097,6 +16118,16 @@ body .carousel .carousel-indicators li {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bkf .icon-full .icon {
+    padding-left: 25px;
+  }
+}
+
+.bkf .icon-full .icon:hover {
+  color: #C12D3F;
+}
+
 .bkf .side {
   border-bottom: solid 1px light grey;
 }
@@ -16105,12 +16136,18 @@ body .carousel .carousel-indicators li {
   font-family: Courgette-Regular;
   font-size: 30px;
   border-bottom: solid 1px lightgrey;
+  text-align: center;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .bkf h5 {
-    padding-left: 120px;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bkf h5 {
+    font-size: 16px;
   }
 }
 
@@ -16126,6 +16163,7 @@ body .carousel .carousel-indicators li {
   display: flex;
   height: 120px;
   position: relative;
+  margin: 0px;
 }
 
 .bkf span {
@@ -16136,6 +16174,18 @@ body .carousel .carousel-indicators li {
   padding: 10px;
   color: #c91d34;
   opacity: 0.8;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bkf span {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bkf span {
+    padding: 0px;
+  }
 }
 
 .titre-chef {
@@ -16151,12 +16201,21 @@ body .carousel .carousel-indicators li {
   color: white;
 }
 
-.titre-chef h1 span {
-  color: #c91d34;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titre-chef h1 {
+    font-size: 30px;
+  }
 }
 
-.titre-chef img {
-  display: block;
+@media (max-width: 767.98px) {
+  .titre-chef h1 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+
+.titre-chef h1 span {
+  color: #c91d34;
 }
 
 @media (max-width: 767.98px) {
@@ -16166,15 +16225,7 @@ body .carousel .carousel-indicators li {
 }
 
 .titre-chef .chef {
-  padding-top: 150px;
   margin-right: 0px;
-}
-
-@media (max-width: 767.98px) {
-  .titre-chef .chef {
-    padding-top: 0;
-    margin: 0px 0px 0px 0px;
-  }
 }
 
 .titre-chef .chef img {
@@ -16183,16 +16234,14 @@ body .carousel .carousel-indicators li {
 
 @media (max-width: 767.98px) {
   .titre-chef .chef img {
-    height: 115px;
-    padding-top: 5%;
-    display: block;
+    height: 125px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .titre-chef .chef img {
-    height: 70px;
-    display: flex;
+    height: 250px;
+    padding-top: 30px;
   }
 }
 
@@ -16330,7 +16379,7 @@ form .now {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .blog .but {
-    margin: auto;
+    font-size: 20px;
   }
 }
 
@@ -16353,11 +16402,19 @@ form .now {
 
 .bg .client {
   color: white;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 @media (max-width: 767.98px) {
   .bg .client {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bg .client {
+    flex-wrap: wrap;
   }
 }
 
@@ -16419,7 +16476,7 @@ img {
 }
 
 .square {
-  height: 450px;
+  height: 360px;
   width: 450px;
   background-color: #c91d34;
   border-radius: 3%;
@@ -16492,19 +16549,24 @@ footer .bas img {
 
 footer .bas .insta {
   display: flex;
-  width: 50%;
   flex-wrap: wrap;
 }
 
 footer .bas .insta img {
-  height: 60px;
+  height: 80px;
   margin-bottom: 10px;
   margin: 5px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   footer .bas .insta img {
-    height: 40px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer .bas .insta img {
+    height: 130px;
   }
 }
 

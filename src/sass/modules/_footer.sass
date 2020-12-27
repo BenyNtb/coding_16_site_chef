@@ -29,14 +29,16 @@ footer
             height: 50px
         .insta
             display: flex
-            width: 50%
+            // width: 50%
             flex-wrap: wrap
             img
-                height: 60px
+                height: 80px
                 margin-bottom: 10px
                 margin: 5px
-                @include media-breakpoint-down(sm) 
-                    height: 40px
+                @include media-breakpoint-only(sm) 
+                    height: 30px        
+                @include media-breakpoint-only(md)
+                    height: 130px
         button
             border-radius: 16px
             border: 1px solid white

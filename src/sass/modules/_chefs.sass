@@ -2,35 +2,33 @@
     background-image: url("../img/team_background.jpg")
     height: 700px
     background-size: cover
-        
     h1
         font-family: Courgette-Regular
         text-align: center
         padding-top: 60px
         color: white
+        @include media-breakpoint-only(md)
+            font-size: 30px
+        @include media-breakpoint-down(sm) 
+            font-size: 30px
+            padding-top: 30px    
         span
             color: #c91d34
+
     img
-        display: block
     p
         font-size:        
         @include media-breakpoint-down(sm) 
             font-size: 10px
     .chef
-        padding-top: 150px
+        // padding-top: 150px
         margin-right: 0px
-        @include media-breakpoint-down(sm) 
-            padding-top: 0
-            margin: 0px 0px 0px 0px
+        @include media-breakpoint-down(sm)  
+            // margin: 0px 0px 0px 0px
         img
             border-bottom: solid 1px    
             @include media-breakpoint-down(sm) 
-                height: 115px
-                padding-top: 5%
-                display: block
-                // width: 130px
+                height: 125px
             @include media-breakpoint-only(md)
-                    height: 70px
-                    // width: 50px
-                    // padding-top: 10%
-                    display: flex
+                height: 250px
+                padding-top: 30px

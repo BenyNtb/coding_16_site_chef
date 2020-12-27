@@ -41,14 +41,24 @@ body
         .liste
             border-top: 2px solid white
             border-bottom: 2px solid white
+            @include media-breakpoint-down(sm)
+                background-color: #0a0a0a
+                border-top: 2px solid black
+                border-bottom: 2px solid
+                font-size: 16px
+            @include media-breakpoint-down(lg)
+                font-size: 12px
             a
                 text-decoration: none
-                font-size: 15px
+                font-size: 15px                    
             &:hover 
                 background-color: #C12D3F
         .logo
             @include media-breakpoint-down(lg)
                 display: none
+        .listenav        
+            @include media-breakpoint-down(sm)
+                display: none    
 
     .carousel
             .d-block
